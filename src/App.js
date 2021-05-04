@@ -109,7 +109,7 @@ function App() {
             active={casesType === "cases"}
             className="infoBox__cases"
             onClick={(e) => setCasesType("cases")}
-            title="Coronavirus Cases"
+            title="Cases"
             total={prettyPrintStat(countryInfo.cases)}
             cases={prettyPrintStat(countryInfo.todayCases)}
             isloading={isLoading}
@@ -118,7 +118,7 @@ function App() {
             active={casesType === "recovered"}
             className="infoBox__recovered"
             onClick={(e) => setCasesType("recovered")}
-            title="Recovered"
+            title="Recovery"
             total={prettyPrintStat(countryInfo.recovered)}
             cases={prettyPrintStat(countryInfo.todayRecovered)}
             isloading={isLoading}
