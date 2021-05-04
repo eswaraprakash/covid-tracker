@@ -1,0 +1,60 @@
+[debug] [2021-05-04T07:38:55.282Z] ----------------------------------------------------------------------
+[debug] [2021-05-04T07:38:55.284Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-04T07:38:55.284Z] CLI Version:   9.10.0
+[debug] [2021-05-04T07:38:55.285Z] Platform:      win32
+[debug] [2021-05-04T07:38:55.285Z] Node Version:  v15.11.0
+[debug] [2021-05-04T07:38:55.286Z] Time:          Tue May 04 2021 13:08:55 GMT+0530 (India Standard Time)
+[debug] [2021-05-04T07:38:55.286Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-04T07:38:55.292Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-04T07:38:55.292Z] > authorizing via signed-in user (eswara.email@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\EswaraPC\Documents\covid-tracker
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-05-04T07:39:18.966Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-05-04T07:39:19.506Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-05-04T07:39:19.507Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project my-covid-tracker-45de8 (my-covid-tracker) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-05-04T07:39:55.681Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-05-04T07:39:55.828Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-05-04T07:39:55.828Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.4.3","browserURL":"https://www.gstatic.com/firebasejs/8.4.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.4.3/firebase.tgz"},"live":{"version":"8.4","browserURL":"https://www.gstatic.com/firebasejs/live/8.4/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.4/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.4.3/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.4.3/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.4.3/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.4.3/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.4.3/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\EswaraPC\Documents\covid-tracker 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1070302863&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-05-04T07:40:32.686Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"3d2f8a5aba13524494d2","redirect_uri":"http://localhost:9005","state":"1070302863"}
+[debug] [2021-05-04T07:40:33.215Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Tue, 04 May 2021 07:40:35 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"fa25bbed91b53055b3d0474156e625e3\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"62FD:6D26:858E7:A5025:6090FA72"}
+[debug] [2021-05-04T07:40:33.223Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-05-04T07:40:33.646Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-05-04T07:40:33.646Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"eswaraprakash","id":20826784,"node_id":"MDQ6VXNlcjIwODI2Nzg0","avatar_url":"https://avatars.githubusercontent.com/u/20826784?v=4","gravatar_id":"","url":"https://api.github.com/users/eswaraprakash","html_url":"https://github.com/eswaraprakash","followers_url":"https://api.github.com/users/eswaraprakash/followers","following_url":"https://api.github.com/users/eswaraprakash/following{/other_user}","gists_url":"https://api.github.com/users/eswaraprakash/gists{/gist_id}","starred_url":"https://api.github.com/users/eswaraprakash/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/eswaraprakash/subscriptions","organizations_url":"https://api.github.com/users/eswaraprakash/orgs","repos_url":"https://api.github.com/users/eswaraprakash/repos","events_url":"https://api.github.com/users/eswaraprakash/events{/privacy}","received_events_url":"https://api.github.com/users/eswaraprakash/received_events","type":"User","site_admin":false,"name":"EswaraPrakash Vaithiyanathan","company":null,"blog":"http://www.linkedin.com/in/eswarav/","location":"Chennai, Tamilnadu, India","email":null,"hireable":true,"bio":"Intelligence Engineering. My Technical Stack is focused on MDN. JavaScript codes are Practice codes from Medium.com","twitter_username":null,"public_repos":70,"public_gists":0,"followers":0,"following":8,"created_at":"2016-08-03T23:26:54Z","updated_at":"2021-05-04T07:40:12Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":7539,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as eswaraprakash 
+[info] 
