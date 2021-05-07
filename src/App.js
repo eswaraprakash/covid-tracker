@@ -83,7 +83,7 @@ function App() {
 
     console.log(countryInfo);
   };
-  const dateUpdated = new Date(countryInfo.updated).toString();
+  const dateUpdated = Date(countryInfo.updated);
   return (
     <div className="app">
       <div className="app__left">
