@@ -48,6 +48,11 @@
   .app__graph {
     flex-grow: 1;
   }
+  .app__footer{
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
   
   @media (max-width: 990px) {
     .app {

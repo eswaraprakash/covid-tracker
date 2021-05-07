@@ -5,7 +5,7 @@ import {
   FormControl,
   Select,
   CardContent,
-  Card,
+  Card
 } from "@material-ui/core";
 import InfoBox from "./InfoBox";
 import Map from "./Map";
@@ -141,6 +141,7 @@ function App() {
           zoom={zoom}
           casesType={casesType}
         />
+        <div className="app__footer">Data Shown here are from disease.sh</div>
       </div>
       <Card className="app__right">
         <CardContent>
@@ -152,6 +153,7 @@ function App() {
         {/* Table */}
         {/* Graph */}
       </Card>
+      
     </div>
   );
 }
