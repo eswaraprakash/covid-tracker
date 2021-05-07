@@ -83,7 +83,7 @@ function App() {
 
     console.log(countryInfo);
   };
-
+  const dateUpdated = new Date(countryInfo.updated).toString();
   return (
     <div className="app">
       <div className="app__left">
@@ -141,7 +141,10 @@ function App() {
           zoom={zoom}
           casesType={casesType}
         />
-        <div className="app__footer">Data Shown here are from disease.sh</div>
+        <div className="app__footer">
+          Data Shown here are from disease.sh.
+          <p className="app__footer_date">Date: {dateUpdated}</p>
+        </div>
       </div>
       <Card className="app__right">
         <CardContent>

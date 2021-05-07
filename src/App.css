@@ -53,6 +53,9 @@
     margin-top: 5px;
     margin-bottom: 5px;
   }
+  .app__footer_date{
+    font-size: small;
+  }
   
   @media (max-width: 990px) {
     .app {
